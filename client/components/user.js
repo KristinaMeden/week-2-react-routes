@@ -6,7 +6,7 @@ const User = () => {
   return (
     <div>
         <div id="title">Profile</div>
-        <Link to="/dashboard/">Go To Root</Link><br />
+        <Link to="/dashboard">Go To Root</Link><br />
         <Link to="/dashboard/main">Go To Main</Link>
         <div id="username">{username}</div>
     </div>
