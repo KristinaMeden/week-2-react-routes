@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 const Header = () => {
-  const [toggled, toggle] = useState(false)
+  const [toggled, toggle] = useState(true)
 
   return (
     <nav className="flex items-center justify-between flex-wrap bg-gray-400 p-6">
