@@ -12,7 +12,7 @@
         <div className="flex items-center justify-center h-screen">
           <div className="bg-indigo-800 text-white font-bold rounded-lg border shadow-lg p-10">
             <Switch>
-              <Route path="/dashboard" exact component={() => {
+              <Route path="/dashboard" component={() => {
                 return <div>
                     <div id="title">Dashboard</div>
                     <Link to="/dashboard/profile/1e2daae8-1f83-4b20-b87b-21119f49f39c">Go To Profile</Link><br />
