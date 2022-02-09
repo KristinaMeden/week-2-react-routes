@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Header = () => {
+  const [toggled, toggle] = useState(true)
 
   return (
     <nav className="flex items-center justify-between flex-wrap bg-gray-400 p-6">
@@ -18,13 +19,14 @@ const Header = () => {
           type="button"
           id="toggle-button"
           className="font-semibold text-xl tracking-tight"
+          onClick={() => toggle(!toggled)}
         >
           Tailwind CSS
         </button>
       </div>
+      {toggled && (
         <div id="menu" className="block">
-          <a
-            href="https://www.google.com/"
+          <button
             type="button"
             className="flex items-center px-3 py-2 border rounded text-gray-700 border-gray-700 hover:text-white hover:border-white"
           >
@@ -36,9 +38,9 @@ const Header = () => {
               <title>Menu</title>
               <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
             </svg>
-          </a>
+          </button>
         </div>
-      )
+      )}
     </nav>
   )
 }
